@@ -1,0 +1,221 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.header{
+    width: 100%;    
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ED002E;
+    background: #FFF;
+    font-weight: bold;
+    font-family: Oswald;
+    letter-spacing: 2px;
+    padding-left: 300px;
+}
+
+.side_bar{
+    width: 300px;
+    height: 100vh;
+    background: #000333;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -8vh;
+    transition: 0.5s;
+}
+
+.icon_menu{
+    color: #ED002E;
+    font-size: 30px;
+    padding: 30px 30px;
+}
+.icon_menu:hover {
+    cursor: pointer;
+    color: #FFF;
+}
+
+.text_menu{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn_side_bar{
+    width: 100%;
+    height: 8vh;
+    background: #000333;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    font-family: Oswald;
+    letter-spacing: 2px;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn_side_bar:hover{
+    background: #060e87;
+    cursor: pointer;
+}
+
+
+
+.tinh_tien{
+    margin-top: 40px;
+}
+
+.icon_item{
+    color: #ED002E;
+    padding: 0 32px;
+}
+
+.xoa{
+    margin-left: 30px;
+}
+
+.xoane{
+    margin-top: 65vh;
+}
+
+.fa-calculator{
+    margin-right:50px;
+}
+
+.fa-book{
+    margin-right:40px;
+}
+
+.main_calculator{
+    color:#000;
+    margin-left: 300px;
+    position: absolute;
+}
+
+.scale_width{
+    width: 100px;
+}
+
+.hide{
+    display: none;
+}
+
+
+/* ---------------------------------------------------- */
+
+.main_calculator{
+    margin-left: 23vw;
+    margin-top: 100px;
+}
+
+.alert{
+    display: flex;
+    font-size: 30px;
+}
+
+.price{
+    margin-left: 20px;
+}
+
+input,select{
+    width: 200px;
+    height: 40px;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.add_course{
+    border: 1px solid #ED002E;
+    border-radius: 15px;
+}
+
+.text_add{
+    padding: 10px;
+}
+
+.input_course{
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.btn_add, .btn_add_list2{
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: #000333;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    margin-top: -20px;
+}
+
+.btn_add:hover, .btn_add_list2:hover{
+    cursor: pointer;
+    background: #ED002E;
+    scale: 1.2;
+}
+
+.input_add_course{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.pay{
+    margin-top: 10px;
+}
+
+#myTable{
+    border: 1px solid #ED002E ;
+    margin:20px auto;
+}
+
+
+.colum1{
+    width: 150px;
+}
+
+.colum2{
+    width: 300px;
+}
+
+tr{
+   text-align: center;
+}
+
+
+/* --------------------------------------------------------- */
+.main_list{
+    float: right;
+    right: 0;
+    padding-top: 100px;
+    position: absolute;
+    width: 50vw;
+    margin-right: 20vw;
+}
+
+.list_item{
+    width: 300px;
+}

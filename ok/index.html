@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trịnh Đức Toàn </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <p>Tra cứu học phí - Đại học Thăng Long</p>
+    </div>
+
+    <!-- --------------------------------------------------------------------------- -->
+
+
+    <div class="main_calculator hide">
+        <div class="alert">
+            <p class="alert_item">Mức đơn vị phí năm 2023 là: </p>
+            <p class="price">450.000 VNĐ</p>
+        </div>
+        <div class="add_course">
+            <p class="text_add">Thêm môn: </p>
+            <div class="input_course">
+                <input type="text" id="code" class="code_course" placeholder="Mã môn">
+                <input type="text" id="hoc_phi" class="name_course" placeholder="Tên môn">
+                <input type="number" class="number_credits" placeholder="Số tín chỉ">
+                <input type="number" class="coefficient" placeholder="Hệ số">
+                <button class="btn_add" id="btnAddCourse">Thêm</button>
+                <button class="btn_add btn" id="btnCharge">Tính phí</button>
+
+            </div>
+        </div>
+        <div class="add_course pay">
+            <p class="text_add">Tính học phí</p>
+            <div class="input_add_course">
+                <select name="semester" id="semester">
+                    <option value="ky1">Kỳ 1</option>
+                    <option value="ky2">Kỳ 2</option>
+                    <option value="ky3">Kỳ 3</option>
+                </select>
+                <input type="number" id="year" placeholder="Năm">
+                <select name="code_course" id="code_course">
+
+                </select>
+                <button class="btn_add_list2" id="btn_add_course">Thêm</button>
+            </div>
+        </div>
+
+        <table id="myTable">
+            <tr>
+                <th class="colum1">Ma mon</th>
+                <th class="colum2">Hoc phi</th>
+            </tr>
+
+        </table>
+    </div>
+
+
+
+
+    <!-- --------------------------------------------------------------------------- -->
+
+
+
+    <div class="main_list hide">
+        <table id="table_list">
+            <tbody>
+                <tr>
+                    <th class="1 list_item">STT</th>
+                    <th class="2 list_item">Kỳ học</th>
+                    <th class="3 list_item">Tổng số môn </th>
+                    <th class="4 list_item">Tổng tín chỉ</th>
+                    <th class="5 list_item">Học phí</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Kỳ 1</th>
+                    <th class="soMon1"></th>
+                    <th class="tin_chi1"></th>
+                    <th class="hoc_phi1"></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Kỳ 2</th>
+                    <th class="soMon2"></th>
+                    <th class="tin_chi2"></th>
+                    <th class="hoc_phi2"></th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Kỳ 3</th>
+                    <th class="soMon3"></th>
+                    <th class="tin_chi3"></th>
+                    <th class="hoc_phi3"></th>
+                </tr> 
+               
+            </tbody>  
+        </table>
+    </div>
+
+
+    <!-- _______________________________________________________________________ -->
+
+
+    <div class="side_bar ">
+        <ul>
+            <i class="fa-solid fa-bars icon_menu"></i>
+        </ul>
+        <ul>
+            <div class="calculator btn_side_bar">
+                <i class="fa-solid fa-calculator icon_item"></i>
+                <p class="text_menu ">
+                    Tính tiền
+                </p>
+            </div>
+        </ul>
+        <ul>
+            <div class="list btn_side_bar">
+                <i class="fa-solid fa-book icon_item"></i>
+                <p class="text_menu ">
+                    Danh sách
+                </p>
+            </div>
+        </ul>
+        <ul>
+            <div class=" btn_side_bar xoane" id="clearLocalStorage">
+                <i class="fa-solid fa-broom icon_item"></i>
+                <p class="text_menu xoa"> Xóa dữ liệu</p>
+            </div>
+        </ul>
+    </div>
+
+
+
+    <!-- --------------------------------------------------------------------------- -->
+
+
+
+    <div class="footer"></div>
+
+
+
+</body>
+
+<script src="app.js" >
+</script>
+
+</html>
